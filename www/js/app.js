@@ -26,7 +26,7 @@ angular.module('mycontact', ['ionic'])
   .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('detail', {
-      url: '/detail:{name}/{nick}',
+      url: '/detail:{img}/{name}/{nick}/{social}/{mobile}/{line}',
       templateUrl: 'template/detail.html',
       controller: 'detailController'
     })

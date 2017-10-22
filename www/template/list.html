@@ -1,6 +1,6 @@
 <ion-view>
   <ion-nav-bar>
-    <ion-nav-title> ท ำเนียบรุ่น ปวส.2 คอมพิวเตอร์ธุรกิจ</ion-nav-title>
+    <ion-nav-title>แถวเนียบรุ่น 57 มหาวิทยาลัยสยาม</ion-nav-title>
   </ion-nav-bar>
   <ion-content>
     <div class="list">
@@ -9,10 +9,13 @@
         class="icon ion-search placeholder-icon"></i> <input type="search" ng-model="query" placeholder="ค้นหา">
       </label></div>
 
-
+<!--
       <div class="item item-divider-ios item-positive">นักศึกษา</div>
+-->
+
       <div class="item item-avatar-left item-icon-right" ng-click="btnDetail(data)"
-           ng-repeat="data in myDataArray | filter : query"><img ng-src="img/ionic.png" style="border-radius:50%;">
+           ng-repeat="data in myDataArray | filter : query"><img ng-src="img/{{data.imgDev}}"
+                                                                 height="128" width="128" style="border-radius:50%;">
 
         <h2>{{data.name}}</h2>
 
