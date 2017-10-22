@@ -2,5 +2,13 @@
   "name": "MyContact",
   "app_id": "",
   "type": "ionic1",
-  "integrations": {}
+  "integrations": {
+    "gulp": {}
+  },
+  "watchPatterns": [
+    "scss/**/*",
+    "www/**/*",
+    "!www/lib/**/*",
+    "!www/**/*.map"
+  ]
 }
