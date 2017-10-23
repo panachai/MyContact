@@ -35,6 +35,11 @@ angular.module('mycontact', ['ionic'])
       templateUrl: 'template/list.html',
       controller: 'listController'
     })
+      .state('login',{
+        url:'/login',
+        templateUrl:'template/login.html',
+        controller:'loginController'
+      })
 
-    $urlRouterProvider.otherwise('/list')
+    $urlRouterProvider.otherwise('/login')
   })

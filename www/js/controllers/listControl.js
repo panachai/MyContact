@@ -46,7 +46,7 @@ angular.module('mycontact')
     //]
 
 
-    $http.get('http://localhost/www_web_api/webservice/ws_list.php').then(function (response) {
+    $http.get('http://busynor.com/www_web_api/webservice/ws_list.php').then(function (response) {
       console.log(response.data.results);
       $scope.myDataArray = response.data.results;
     }, function (error) {
